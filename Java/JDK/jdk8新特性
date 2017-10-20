@@ -1,0 +1,18 @@
+## Stream流
+
+```java
+List<String> threeHighCaloricDishNames =
+                menu.stream()
+                    .filter(d -> d.getCalories() > 300)
+                    .map(Dish::getName)
+                    .limit(3)
+                    .collect(Collectors.toList());
+```
+
+![d](https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1049223394,2781225908&fm=173&s=A29B1CC72A1C36DED7A1A53503004041&w=640&h=480&img.JPEG)
+
+*<font color="coral">集合注重的是数据，而流注重的是计算。和迭代器类似流也只能遍历一次，遍历完之后我们可以将这个流视为已被消费掉了</font>*
+
+
+
+![a](D:\1.jpg)
